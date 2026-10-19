@@ -1,0 +1,14 @@
+{
+  "name": "zenn-content",
+  "version": "1.0.0",
+  "description": "どーじょーのZenn記事（Zenn CLI + GitHub連携）",
+  "scripts": {
+    "preview": "zenn preview",
+    "new:article": "zenn new:article"
+  },
+  "author": "",
+  "devDependencies": {
+    "zenn-cli": "^0.5.7"
+  },
+  "private": true
+}
