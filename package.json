@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "どーじょーのZenn記事（Zenn CLI + GitHub連携）",
   "scripts": {
-    "preview": "zenn preview",
-    "new:article": "zenn new:article"
+    "preview": "npx -y -p node@22 node node_modules/.bin/zenn preview",
+    "new:article": "npx -y -p node@22 node node_modules/.bin/zenn new:article"
   },
   "author": "",
   "devDependencies": {
