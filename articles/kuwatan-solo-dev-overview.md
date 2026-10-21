@@ -1,5 +1,5 @@
 ---
-title: "教員が1人で「喋って育てる英語ゲーム」を作って、課金まで付けた全体像"
+title: "1人で「喋って育てる英語ゲーム」を作って、課金まで付けた全体像"
 emoji: "🪲"
 type: "tech"
 topics: ["nextjs", "supabase", "stripe", "gemini", "個人開発"]
@@ -13,7 +13,7 @@ published: false
 
 https://app.upskillenglish.bear-fruit.online/welcome?utm_source=zenn&utm_medium=article&utm_campaign=kuwatan-solo-dev-overview
 
-本業は教育の仕事で、開発はほぼ独学です。この記事では、作ったものの全体像を、
+開発はほぼ独学で、仕事の合間に作りました。この記事では、作ったものの全体像を、
 
 - どういう仕組みで「話す練習」をさせているか
 - AIの判定に実際いくらかかっているか
