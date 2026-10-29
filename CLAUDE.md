@@ -11,6 +11,7 @@
 - 営業色は控えめに。アプリへの誘導は記事末のリンク＋プロフィール程度。
 - アプリへのリンクには `utm_source=zenn&utm_medium=article&utm_campaign=<slug>` を付ける。
 - 記事は `published: false` のまま書き、公開はどーじょーが判断する。Claudeは勝手に `true` にしない。
+- 公開は `_queue/` に置くと GitHub Actions が1日1本ずつ行う（README参照）。`_queue/` に入れる＝公開の判断なので、Claudeはどーじょーの指示なしに `_queue/` へ移さない。
 - 1記事1テーマ。関連記事は記事末で相互にリンクする。
 
 ## frontmatter

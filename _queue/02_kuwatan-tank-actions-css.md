@@ -3,7 +3,7 @@ title: "絵を1枚も足さずに、虫に20種類のアクションをさせる
 emoji: "🪲"
 type: "tech"
 topics: ["css", "react", "typescript", "nextjs"]
-published: true
+published: false
 ---
 
 英語学習アプリ「喋って！育てろ！英クワたん」を個人で作っている、どーじょーです。開発は Claude と一緒にやっています（アプリ全体の話は[前の記事](https://zenn.dev/tomoki_dojo/articles/kuwatan-solo-dev-overview)に書きました）。

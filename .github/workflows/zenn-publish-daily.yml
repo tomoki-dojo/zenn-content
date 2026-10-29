@@ -1,0 +1,41 @@
+# Zennに1日1本ずつ公開する。公開待ちの記事は _queue/ に「01_<slug>.md」の形で置く。
+# 仕組みは .github/scripts/publish_next.py の先頭のコメントを参照。
+name: Zennに1日1本公開
+
+on:
+  schedule:
+    - cron: "30 22 * * *" # 毎朝 7:30（日本時間）。GitHubの混み具合で数十分遅れることがある
+  workflow_dispatch: # GitHubの「Actions」タブから手動でも動かせる
+
+permissions:
+  contents: write
+
+concurrency:
+  group: zenn-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - id: next
+        run: python .github/scripts/publish_next.py
+
+      - name: commit・push
+        if: steps.next.outputs.action != 'none'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ "${{ steps.next.outputs.action }}" = "publish" ]; then
+            git add -A articles _queue
+            git commit -m "自動公開：${{ steps.next.outputs.slug }}"
+          else
+            git commit --allow-empty -m "Zennの再デプロイ（${{ steps.next.outputs.slug }} が未公開のため）"
+          fi
+          git push

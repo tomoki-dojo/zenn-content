@@ -3,7 +3,7 @@ title: "Supabaseの匿名ログインで「登録なしで試す」を作って�
 emoji: "🪲"
 type: "tech"
 topics: ["supabase", "nextjs", "typescript", "auth"]
-published: true
+published: false
 ---
 
 <!-- 自動下書き（2026-10-28）／元にした変更：コミット c8a2fcf「ゲスト体験（匿名ログイン）とGoogleログインを追加」・共有ボード 2026-10-28 [実装]「設計（ゲスト体験・匿名ログイン方式）」「本番デプロイ済み」／【要確認】2・【どーじょー記入】3／コードは c8a2fcf の実ファイルからの抜粋（一部省略） -->
