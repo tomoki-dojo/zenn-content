@@ -3,7 +3,7 @@ title: "ご褒美を「あとから」「二重なく」配る：(user_id, event
 emoji: "🥚"
 type: "tech"
 topics: ["supabase", "postgresql", "nextjs", "typescript"]
-published: false
+published: true
 ---
 
 英語学習アプリ「喋って！育てろ！英クワたん」を個人で作っている、どーじょーです。開発は Claude と一緒にやっています（アプリ全体の話は[前の記事](https://zenn.dev/tomoki_dojo/articles/kuwatan-solo-dev-overview)に書きました）。
